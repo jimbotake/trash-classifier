@@ -44,5 +44,14 @@ Distributed under the MIT License.
 
 ## Contact
 
-Your Name - your.email@example.com  
-Project Link: https://github.com/username/trash-classifier
+Your Name - dimasony.dewantara@gmail.com  
+Project Link: https://github.com/jimbotake/trash-classifier
+
+## Dataset Citation
+
+This project uses the [TrashNet dataset](https://github.com/garythung/trashnet) for training and evaluation.
+
+Please cite the dataset as:
+
+> Thung, G., & Yang, M. (2016). **TrashNet: A Dataset for Image Classification of Trash**. Retrieved from https://github.com/garythung/trashnet
+
