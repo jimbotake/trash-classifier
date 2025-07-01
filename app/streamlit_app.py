@@ -2,9 +2,15 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 from PIL import Image, ImageOps
 import numpy as np
+import os
 
-# Load model (pastikan path sesuai lokasi model kamu)
-MODEL_PATH = 'model/trash_cnn_10_epoch.h5'
+# Lokasi file ini (streamlit_app.py)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Path ke model (naik satu folder, lalu ke folder model)
+MODEL_PATH = os.path.join(BASE_DIR, '../model/trash_cnn_10_epoch.h5')
+
+# Load model
 model = load_model(MODEL_PATH)
 
 # Nama kelas sesuai dataset
@@ -21,7 +27,7 @@ if uploaded_file is not None:
 
     # Preprocess gambar supaya sesuai input model (150x150)
     image = ImageOps.fit(image, (150, 150))
-    image_array = np.asarray(image)/255.0
+    image_array = np.asarray(image) / 255.0
     image_array = image_array.reshape(1, 150, 150, 3)
 
     # Prediksi kelas
