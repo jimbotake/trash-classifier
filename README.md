@@ -38,6 +38,9 @@ Aplikasi ini memungkinkan pengguna mengupload gambar sampah dan mendapatkan pred
 - Upload gambar sampah melalui aplikasi web Streamlit.
 - Aplikasi akan menampilkan prediksi kelas dan confidence level.
 
+## Visulisasi Aplikasi
+![Tampilan Aplikasi](images/capture_aplikasi.png)
+
 ## License
 
 Distributed under the MIT License.
